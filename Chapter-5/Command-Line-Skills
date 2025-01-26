@@ -1,0 +1,46 @@
+
+#History
+you can reuse a cmd on history list by: !num i.e !121
+
+#Env
+env= global variable
+you can set a env by: export variable1="Global Variable"
+
+#Alias 
+Can be used to map longer cmd to shorter key
+you can check already created aliases with the cmd: alias
+you can set an alias by: alias name=command i.e alias mycal="cal 2019"
+
+#Function
+functions are reuseable code
+you can set a function by: function(){ commands }
+
+#Quotes
+Double quote: "" 
+DQ is used for string and ignores Glob characters but not cmd or variable substitution
+
+Single quote: ''
+SQ is used/works full a string, everything is considered a string
+
+Backslash: \
+BS is used to prevent a shell from interpreting a likely cmd
+
+Back Quotes: ``
+BQ is used as cmd substitution
+This is used to interprete a single command in a string
+
+#Control Statement
+CS are used to run multipe cmds or run additional cmds
+
+Semicolon: ;
+cal 2011; cal 2021
+This is used to run multiple cmd at once, each run independently and consecutively
+
+Double Ampersand: &&
+DA acts as a logical "and". the first command must be successful for the other commands to work
+cd /home/host && nano newfile
+
+Double Pipe: ||
+DP acts as a logical "or". depends on the result of the first cmd, the rest will either run or skip.
+
+cd /home/host/DP || echo no such file exists  
