@@ -1,0 +1,23 @@
+Getting help with linux commands.
+
+#Man Page: Manual page
+You can search for a term in man page by: /foo
+You can search for man page by section by: man -f passwd || whatis ls
+You can search both the names and descriptions of a man by: man -k copy
+You can search for the location of a command by: whereis ls
+
+#Locate: locate
+You can find any file or directory by using the locate cmd: locate man
+You can find how many instance of a file exists by: locate -c man
+You can modify the last line to only include the basename of the file you're searching for by: locate -c -b man
+You can search for the exactly file by: locate -b "\man"
+
+#Info
+Info is advanced man page 
+Info is a document broken into nodes
+Info can find out how to navigate the doc by: shift+H
+
+#Help
+You can find basic info about cmds by: cat --help
+
+#Read documentations
