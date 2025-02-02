@@ -1,0 +1,28 @@
+
+Compression
+#You can compress a file by:gzip file1.txt
+#You can compressed files info by:gzip -l file1
+#You can uncompress a file by:gunzip file1.txt.gz
+
+Archiving
+CREATE MODE: tar -c [-f ARCHIVE] [OPTIONS] [FILE...]
+#You can archive multiple files by: tar -cf file.tar *.txt
+#You can compress and archive at the same time by: tar -czf file.tar *.txt
+#You can compress and archive at the same time by: tar -cjf file.tbz *.txt for bzip2 compression format.
+
+LIST MODE: tar -t [-f ARCHIVE] [OPTIONS]
+#You can list items in a compressed file by: tar -tjf folders.tbz for bzip2 format
+#You can list items in a compressed file by: tar -tzf folders.tbz for gzip format
+
+EXTRACT MODE: tar -x [-f ARCHIVE] [OPTIONS]
+#You can extract the items in a compressed file by: tar -xjf folders.tbz 
+#You can extract the items in a compressed file by: tar -xzf folders.zgip 
+#You can extract and verbosely list the items in a compressed file by: tar -xjvf folders.tbz 
+
+ZIP FILES: zip [OPTIONS] [zipfile [file...]]
+#You can compress a file by: zip folders.zip *.txt
+#You can compress a file recursively by: zip -r folders.zip *.txt
+#You can uncompress a file by: unzip folders.zip
+#You can uncompress a file and list the content by: zip -l folders.zip *.txt
+ 
+
