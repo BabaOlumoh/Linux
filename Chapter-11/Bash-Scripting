@@ -1,0 +1,14 @@
+#!/bin/bash - shebang
+
+bash script.sh
+./script.sh
+
+#Text Editors
+-nano:
+ctrl + w: search
+ctrl + w then ctrl + r: search and replace
+ctrl + g: show all commands
+ctrl + y/v: page up/down
+ctrl + c: show current position in the file and file's size
+
+-vi or vim

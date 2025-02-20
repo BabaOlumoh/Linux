@@ -1,0 +1,62 @@
+
+#Cat
+-You can view text file with: cat
+-cat text.txt
+
+#Pager
+-An alternative and more robust option to cat is the pager command
+
+--less
+-You can view a file with: less
+-less text.txt
+-use H or Shift+h to view help and movement
+-Spacebar for forward, B for backward
+-you can search forward using less with: /abdul 
+-you can search backward using less with: ?abdul 
+
+#Head and Tail
+-You can view the first or last few lines of a file using head or tail command respectively.
+-You can view the first 10 lines with: head file.txt
+-You can view the last 10 lines with: tail file.txt
+-You can also set the number of lines either by specifying a number or using: -n:
+**head -3 file.txt || tail -n 3 file.txt
+-You can also view live file changes with: tail -f 
+
+#Pipe
+-Piping can be used to send the output of one cmd to another
+-You can pipe the first 10 lines of a file to stdout with: cat file.txt | head
+-Multiple cmds can be piped together with them running in order 1..2..3.
+
+#Input/Output Redirection
+STDIN: standard input
+STDOUT: standard output
+STDERR: standard error
+
+--STDOUT: standard output also known as steam1
+stdout can be redirected with > to overwrites what is in the file: echo "List 1" > example.txt
+stdout can be redirected with >> to append to what is in the file: echo "List 1" >> example.txt
+
+--STDERR: standard error also known as steam2
+2 must be specified when redirecting to stderr as stdout is also assumed
+stderr can be redirected with 2> to overwrites what is in the file: ls /fake 2> error.txt
+stderr can be redirected with 2>> to overwrites what is in the file: ls /fake 2>> error.txt
+Both stdout and stderr can be redirected with: ls /fake &> both.txt ||
+ ls /fake > example.txt & 2> error.txt
+--STDIN: standard input
+stdin is rarely used but can be used to read arguments from file with: <
+ tr 'a-z' 'A-Z' < example.txt
+
+#Sort
+-You can sort the content of a file or stdout with: sort myfile.txt or ls /folder | sort
+-Use man sort to learn more functions
+
+#File Stat
+-You can view file stat with: wc file
+-The stats are no of line, of words, of byte and filename.
+
+#Cut
+-You can extract columns of text from a file or stdout with cut -d: -fl,5-7 mypasswd
+
+#Grep
+-You can filter lines in a file or stdout of another cmd that matches a specified pattern.
+ grep bash /etc/passwd

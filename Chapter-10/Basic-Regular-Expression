@@ -1,0 +1,24 @@
+#Regular expression or regex
+-regex is a collection of normal and special characters used to find simple or complex patterns
+-Normal characters are alphanumeric characters which match themselves: a == a
+-Special characters have special meanings when used within patterns like grep and do not match themselves
+
+-"." == any single character, matches any single character except for a new line character
+.: grep 'r..f'  would in reef, roof 
+
+-"[]" == a list or range of characters to match one character
+[]: grep '[0-9]' would print all numbers in the file.
+    grep '[a-d]' would print all letter
+note: range has to be incorrect order
+
+-"*" == The previous character repeated zero or more times
+-Used to match zero or more occurrences of a character and it's more useful with a pattern
+*:grep 'r[oe]*d'
+
+-"^" == if it's the first character in the pattern, it has to be in the beginning of the line to match, otherwise it's just a literal ^ character 
+^:grep '^root' would print out line with root as the first word
+
+-"$" == if it's the last character in the pattern, it has to be in the beginning of the line to match, otherwise it's just a literal $ character 
+$:grep 'r$' would print lines with r as the last letter
+
+-'\' == used to ignore a regex and use it a literal sign 
