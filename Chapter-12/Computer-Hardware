@@ -1,0 +1,20 @@
+
+#Processors:
+--You can find the type of processors in a linux with: arch
+
+#RAM:
+--You can find the amount of RAM installed with: free -g
+--Swap is a virtualised memory used for moving data stored on RAM to disk to save space
+
+#Buses
+--A bus is a high-speed connection that allows communication between computers or the computers inside a computer.
+--You can view the PCI connected to a linux system with: lspci
+--You can view the USB connected to a linux system with: lsusb
+
+#Hard Drives
+--Hard drives, hard disk, HDD or storage devices
+
+#Solid State Disks
+--SSD
+
+#Optical Drives
