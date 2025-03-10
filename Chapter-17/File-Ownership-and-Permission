@@ -1,0 +1,19 @@
+File Ownership and Permission
+
+#You can change user ownership of files with: chown user /path/to/file
+#You can change user and group ownership of files with: chown user:group /path/to/file
+#You can change group ownership of files with: chown .user /path/to/file
+
+PERMISSION
+- |rwx| -rw- |r
+
+First section: File type: usually - for regular, d for directory, l for link
+Second section: User permission
+Third section: Group permission
+Last section: World permission
+
+r:read, w:write, e:execute, -:not applied
+
+CHANGING PERMISSION
+#You can change file permission with: chmod +x /filename.sh   :to execute
+
